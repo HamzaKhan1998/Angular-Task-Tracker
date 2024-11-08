@@ -1,0 +1,76 @@
+article {
+    padding: 1rem;
+    color: #25113d;
+    /* background-color: #bf9ee5; */
+    background-color: #ffffff;
+    position: relative;
+    min-height: 168px;
+  }
+  
+  h2 {
+    margin: 0;
+    margin-bottom: 3px;
+  }
+
+  #summaryP {
+    max-width: 480px;
+    white-space: pre-line;
+    overflow-wrap: break-word;
+  }
+  
+  time {
+    color: #3c2c50;
+  }
+  
+  .actions {
+    text-align: right;
+    margin: 0;
+  }
+
+  .status {
+    text-align: right;
+    margin: 0;
+    position: absolute;
+    right: 16px;
+    top: 18px;
+    font-size: 14px;
+    padding: 6px;
+    border-radius: 3px;
+  }
+
+  .active {
+    color: #57a0ef;
+    border: 1px solid #6eb3fd;
+  }
+
+  .completed {
+    border: 1px solid #28a745;
+    color:#2da749;
+
+    border: 1px solid #959595;
+    color: #626060;
+  }
+
+  
+  
+  .actions button {
+    font: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+    /* background-color: #380774; 
+    color: #decdf2; */
+    background-color: #09f;
+    color: white;
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: #005BE2;
+    color:white;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+  }

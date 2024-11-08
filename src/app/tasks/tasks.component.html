@@ -1,0 +1,24 @@
+<p>
+    <app-new-task *ngIf="isAddingTask" [userId]="userId" (close)="onCloseTask()" />
+</p>
+<section id="tasks">
+    <header>
+        <h2>{{ name }}'s Tasks</h2>
+        <menu>
+            <button (click)="onAddTask()">
+                <span class="icon">+</span>Add Task
+            </button>
+        </menu>
+    </header>
+
+    <ul *ngIf="selectedUserTasks.length > 0; else fallback">
+        <li *ngFor="let task of selectedUserTasks">
+            <app-task [task]="task" (complete)="onCompleteTask($event)"/>
+        </li>
+    </ul>
+    <ng-template #fallback>
+        <li id="specialLi">This user does not have any tasks
+             <!-- <p>This user does not have tasks</p> -->
+        </li>
+    </ng-template>
+</section>
